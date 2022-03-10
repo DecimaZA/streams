@@ -11,7 +11,7 @@ class StreamList extends React.Component {
         return this.props.streams.map(stream => {
             return (
                 <div className="item" key={stream.id}>
-                    <i className="large middle aliigned icon camera" />
+                    <i className="large middle aligned icon camera" />
                     <div className="content">
                         {stream.title}
                     </div>
@@ -19,16 +19,16 @@ class StreamList extends React.Component {
                         {stream.description}
                     </div>
                 </div>
-            )
-        })
+            );
+        });
     }
     
     render() {
         return (
             <div>
-                <h2>Streams</h2>
+                <h2>Your streams</h2>
                 <div className="ui celled list">
-                    {this.renderList}    
+                    {this.renderList()}    
                 </div>
             </div>
         );
